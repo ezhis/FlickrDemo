@@ -70,9 +70,9 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
        
         if indexPath.item == 0 { // header cell
-            return CGSize(width: view.frame.width - 20, height: 100)
+            return CGSize(width: view.frame.width - 20, height: 110)
         } else { // photo cell
-            return CGSize(width: view.frame.width - 20, height: 300)
+            return CGSize(width: view.frame.width - 20, height: 330)
         }
     }
     
