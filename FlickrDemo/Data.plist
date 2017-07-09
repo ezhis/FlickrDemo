@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>headerTitle</key>
+	<string>Recent Photos</string>
+	<key>recentPhotodUrl</key>
+	<string>https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20flickr.photos.recent%20where%20api_key%3D00ac5f70d662304b87e7da585bbdef9d&amp;format=json&amp;diagnostics=true&amp;callback=</string>
+</dict>
+</plist>
