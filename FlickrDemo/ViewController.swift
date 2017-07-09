@@ -36,6 +36,9 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
         navigationBar.setBackgroundImage(#imageLiteral(resourceName: "white"),for: .default)
         navigationBar.isTranslucent = false
         navigationBar.shadowImage = UIImage()
+        
+        // making all visible strings localized
+        navigationItem.title = NSLocalizedString("Recent Photos", comment: "Collection View Title")
 
         //sets alpha of navigation tiitle to zero
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.black.withAlphaComponent(0)]
@@ -85,7 +88,7 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
         
         if indexPath.item == 0 { // Header cell
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "headerCell", for: indexPath) as! HeaderViewCell
-            cell.titleLabel.text = dataDictionary?["headerTitle"] as? String
+            cell.titleLabel.text = NSLocalizedString("Recent Photos", comment: "Title for header cell")
             return cell
             
         } else { // Photo Cell

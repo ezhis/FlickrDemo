@@ -23,7 +23,7 @@ class Photo {
         
         title = "\(fromDictionary["title"]!)"
         if title.isEmpty {
-            title = "No title"
+            title = NSLocalizedString("No title", comment: "Photo withour title")
         }
 
         imageIsLoaded = nil
